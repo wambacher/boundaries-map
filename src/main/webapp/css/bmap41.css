@@ -1,0 +1,308 @@
+/* *** abgeleitet von bmap27.css */
+
+
+html, body {    
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+/*
+table {
+    border-collapse     :collapse;
+}
+*/
+
+#script {
+    height:         100%;
+    visibility:     hidden;
+}
+
+
+
+.olControlLayerSwitcher {
+    opacity:        0.7;
+    filter:         alpha(opacity=80);  
+}
+
+.olControlLayerSwitcher .layersDiv {
+        background-color:   #6B6            !important;
+}
+
+/*
+.olImageLoadError {                                                                                                  
+         background-image: url('/path/to/theme/img/my-tile-load-error.png');
+         background-repeat: no-repeat;
+} 
+*/
+ 
+/*  *********************************** no !!!!!!!!!!!!!
+.left  {
+    float:          left;
+    margin-right:       10px;
+} 
+*/
+/* ************ HEADER *************** */
+
+#header_div {
+        height:         48px;
+        width:          100%;
+        margin-top:     0px;
+        xborder:        1px solid #f00;
+}
+
+#lheader_div {
+        height:         48px;
+        width:          363px;
+        margin-top:     0px;
+        xborder:        1px solid #00f;
+}
+
+#title_div {        
+        font-weight:    bold;
+        font-size:      1.5em;
+        float:          left;
+        text-align:     left;
+        margin:         0px 5px 0px 5px;
+        xborder:        1px solid #f00;
+}
+
+#lag_div {
+        float:          left;
+        width:          100%;
+        margin:         0px 5px 0px 5px;
+        font-size:      small;
+        text-decoration:none;
+        text-align:     center;
+        xborder:        1px solid #f00f; 
+}
+
+#rheader_div { 
+        position:       absolute;
+        top:            0px;   
+        right:          0px;     
+        xfloat:         right;  
+        width:          460px;
+        margin:         0px 0px 0px 0px;
+        xborder:        1px solid #0f0;
+}
+
+#loader_div {
+        float:          left;
+        width:          32px;
+        height:         32px;
+        background-image:url(../images/lupe32.gif);       
+        xborder:        1px solid #00f;
+}
+
+#search_div {        
+        float:          left;
+        width:          248px;  
+        margin:         0px 0px 0px 0px;
+        xborder:        1px solid #000;
+}
+
+#oauth_div {        
+        float:          left;
+        width:          70px;   
+        margin:         0px 0px 0px 5px;
+        xborder:        1px solid #000;
+}
+
+#legend_div {
+        float: left;
+        margin:         0px 0px 0px 0px;
+        xborder:        1px solid #00f;
+}
+
+/* ******************************** MAP ********************** */
+
+#map_div {
+        width:          100%;
+        height:         100%;
+        margin-top:     0.3em;
+}
+
+.olControlAttribution {
+        bottom:             0.5em   !important;
+        background-color:   #ffffff;
+}
+
+/* ******************************************************************** */
+
+#search_popup { 
+    background-color:   #afa;
+    border-radius:      15px;
+    color:              #000;
+    display:            none; 
+    padding:            20px;
+    width:              500px;
+    max-height:         400px;
+}
+
+#zoom_div {
+    position:       absolute;
+    left:           10px; 
+    top:            60px;
+    font-size:      small;
+    font-weight:    bold;
+    color:          #000;
+}
+  
+#mouse_div  {
+    position:       absolute;
+    right:          75px; 
+    bottom:         19px;
+    font-size:      small;
+    font-weight:    bold;
+    color:          #000;
+}   
+
+#flattr_div {
+    position:       absolute;
+    right:          0px;
+    top:            5px;    
+}
+
+#donate_div {
+    position:       absolute;
+    right:          100px;
+    top:            5px;    
+}
+
+
+#permalink_div,
+#clear_selected,
+#legend {
+        float: right;
+        margin-top: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: small;
+        text-decoration: none;
+        xborder: 1px solid #f00; 
+}
+
+#format_div {
+        position:       absolute;
+        left:           0px;
+        bottom:         0px; 
+        height:         45px;  
+        width:          200px; 
+        margin:         0px 0px 0px 0px;
+        border-style:   solid;
+        border-top:     none;
+        border-bottom:  none;
+        border-left:    none; 
+        border-right:   none; 
+}
+
+#spinner_div { 
+        position:       absolute;   
+        left:           200px;
+        bottom:         0px;
+        width:          125px;
+        height:         45px;
+        border-style:   solid;
+        border-top:     none;
+        border-bottom:  none;
+        border-left:    thick double #000;
+        padding-left:   5px;
+        border-right:   none; 
+}
+
+#spinnerContent {
+        padding-top: 10px;
+}
+
+#union_div { 
+        position:   absolute;   
+        left:       325px;
+        bottom:     0px;
+        width:      80px;
+        height:         45px;
+        border-style:   solid;
+        border-top: none;
+        border-bottom:  none;
+        border-left:    thick double #000;
+        border-right:   none;   
+}
+
+#unionContent {
+        padding-top: 12px;
+}
+
+#exportLayout_div {
+        position:   absolute;   
+        left:       410px;
+        bottom:     0px;
+        width:      144px;
+        height:         45px;
+    font-size:  small;
+        line-height:    60%;
+        border-style:   solid;
+        border-top: none;
+        border-bottom:  none;
+        border-left:    thick double #000;
+        border-right:   none;  
+}
+
+#exportLayoutContent {
+        padding-top: 3px;
+}
+
+#exportAreas_div {
+        position:   absolute;   
+        left:       555px;
+        bottom:     0px;
+        width:      70px;
+        height:         45px;
+    font-size:  small;
+        line-height:    60%;
+        border-style:   solid;
+        border-top: none;
+        border-bottom:  none;
+        border-left:    thick double #000;
+        border-right:   none;  
+}
+
+#exportAreasContent {
+        padding-top: 3px;
+}
+
+#apiPopup_div { 
+        position:   absolute;   
+        left:       650px;
+        bottom:     0px;
+        width:      60px;
+        height:         45px;
+        border-style:   solid;
+        border-top: none;
+        border-bottom:  none;
+        border-left:    thick double #000;
+        border-right:   thick double #000;     
+}
+
+#apiPopupContent {
+        padding-top: 12px;
+}
+
+#export_div {
+        position:   absolute;   
+        right:      0px;
+        bottom:     0px;
+        width:      140px;
+        height:         42px;
+        xborder:    1px solid #ff0; 
+}
+
+/* override jstable style */
+
+.vakata-context .vakata-contextmenu-shortcut {
+  font-size: 0.8em;
+  color: green;
+  opacity: 1.0;
+  display: inline-block;
+}

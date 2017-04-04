@@ -1,0 +1,92 @@
+/*
+ *	TOGGLER-BUTTONS
+ */
+
+.ui-layout-pane {
+}
+
+.ui-layout-resizer {
+	background-color: 	#6B6 			!important;
+}
+.ui-layout-toggler {
+	background-color: 	rgb(176,255,176)	!important
+}
+
+.ui-layout-toggler-north-open {
+	background-image: 	url(../images/toggler-north-south-2.png) !important
+}
+.ui-layout-toggler-north-closed {
+	background-image: 	url(../images/toggler-north-south-1.png) !important
+}
+
+.ui-layout-toggler-west-open {
+	background-image: 	url(../images/toggler-west-east-1.png) !important
+}
+.ui-layout-toggler-west-closed {
+	background-image: 	url(../images/toggler-west-east-2.png) !important
+}
+
+.ui-layout-toggler-east-open {
+	background-image: 	url(../images/toggler-west-east-2.png) !important
+}
+
+.ui-layout-toggler-east-closed {
+	background-image: 	url(../images/toggler-west-east-1.png) !important
+}
+
+.ui-layout-toggler-south-open {
+	background-image: 	url(../images/toggler-north-south-1.png) !important
+}
+.ui-layout-toggler-south-closed {
+	background-image: 	url(../images/toggler-north-south-2.png) !important
+}
+
+.ui-layout-north, .ui-layout-center, .ui-layout-south {
+        padding: 		0 			!important;
+}
+
+.ui-layout-north, .ui-layout-east, .ui-layout-south, .ui-layout-west {
+ 	background-color: 	rgb(176,255,176) 	!important;
+}
+
+.ui-layout-toggler {
+	border: 1px solid #BBB; /* match pane-border */
+	background-color: #BBB;
+	}
+	.ui-layout-resizer-hover .ui-layout-toggler {
+		opacity: .60;
+		filter:  alpha(opacity=60);
+	}
+	.ui-layout-toggler-hover , /* need when NOT resizable */
+	.ui-layout-resizer-hover .ui-layout-toggler-hover { /* need specificity when IS resizable */
+		background-color: #FC6;
+		opacity: 1.0;
+		filter:  alpha(opacity=100);
+	}
+	.ui-layout-toggler-north ,
+	.ui-layout-toggler-south {
+		border-width: 0 1px; /* left/right borders */
+	}
+	.ui-layout-toggler-west ,
+	.ui-layout-toggler-east {
+		border-width: 1px 0; /* top/bottom borders */
+	}
+	/* hide the toggler-button when the pane is 'slid open' */
+	.ui-layout-resizer-sliding  .ui-layout-toggler {
+		display: none;
+	}
+	/*
+	 *	style the text we put INSIDE the togglers
+	 */
+	.ui-layout-toggler .content {
+		color:			#666;
+		font-size:		12px;
+		font-weight:		bold;
+		width:			100%;
+		padding-bottom:		0.35ex; /* to 'vertically center' text inside text-span */
+	}
+
+/* jquery-ui button */
+
+#format-popup { width: 3em }
+
