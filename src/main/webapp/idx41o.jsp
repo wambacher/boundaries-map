@@ -152,7 +152,7 @@ $(document).ready(function() {
       var exportCompression = "zip";
       var exportAreas = "water";
       var from_al = 2;
-      var to_al = 4;
+      var to_al = 8;
       var api = "1.0";
       var ignoreMyMails = false;
       var ignoreMsg = false;
@@ -227,7 +227,7 @@ $(document).ready(function() {
       if ((oldGuiVersion != myVersion+"."+mySubversion) && (oldGuiVersion != null)) {                           
          console.log("start noty");
          var n = noty({text: "Version changed: "+oldGuiVersion+" -> "+myVersion+"."+mySubversion+"<br/><br/>"
-                            +   "See <a href=https://"+host+"/index.php/projekte/internationale-administrative-grenzen/boundaries-map-4-1'"
+                            +   "See <a href='https://"+host+"/index.php/projekte/internationale-administrative-grenzen/boundaries-map-4-1'"
                             +   " target='_blank'>german</a> "                        
                             +      " or <a href='https://"+host+"/index.php/projekte/internationale-administrative-grenzen/boundaries-map-4-1-english-version'"
                             +   " target='_blank'>english</a> documentation",
@@ -383,9 +383,7 @@ $(document).ready(function() {
                               var inst = $.jstree.reference(data.reference);
                               var obj = inst.get_node(data.reference);
                               var childs = obj.children;    // offene Children des n&auml;chsten Levels
-//                              doing_children=true;
-                              tree.deselect_node(childs);
-//                             doing_children = false;
+                              tree.deselect_node(childs)
                            }           
                } ,
                "deselect_all_children" : {
@@ -505,7 +503,7 @@ $(document).ready(function() {
          var lowest = null;
          $.ajax({
                  type:      "POST",
-                 async:         false,
+                 async:     false,
                  timeout:   30000,
                  url:       "getChildsWithLowestAL",
                  data: {
@@ -627,11 +625,7 @@ $(document).ready(function() {
          var ts = now.getTime();
 
          console.log("list2.length="+list2.length);
-//4      if (list2.length > 5300) {
-//4         alert ("2 Too many boundaries selected, use new API or mail wnordmann@gmx.de");
-//4         return;
-//4      } 
-      
+
          var oa = true;
          if (list2!='0') oa = getBigBbox(list2, exportAreas); // oa : oauth
          if (oa) {    
@@ -726,10 +720,12 @@ $(document).ready(function() {
                console.log("failCallback: ", url);
                alert("Error doing export - please contact admin (wambacher)");
             }       
-             });
-             console.log("lupe aus");
-             document.getElementById("loader_div").style.visibility="hidden"; // lupe aus ????
+         });
+         console.log("lupe aus");
+         document.getElementById("loader_div").style.visibility="hidden"; // lupe aus ????
     }
+    
+// *****************************************************************************
 
     function doExport(exportList, subtree) { 
          console.log("doExport("+subtree+") starting");
@@ -1103,7 +1099,7 @@ $(document).ready(function() {
 
 // ++++++++++++++++++++++++++++++ Ende OAuth +++++++++++++++++++++++++++++++++++++++++++
 
-        setInterval(getAction,60*10*1000); 
+        setInterval(getAction,60*1000*10); // 10 minutes
         getAction(); 
 
         getTimestamp();
@@ -1206,6 +1202,8 @@ $(document).ready(function() {
                  }   
                });
       }
+      
+// ************************************************************************************************** //
 
       function getTimestamp() {
          $.ajax({
