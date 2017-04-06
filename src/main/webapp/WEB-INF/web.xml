@@ -1,0 +1,207 @@
+<!DOCTYPE web-app PUBLIC
+          "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+          "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>OSM Boundaries</display-name>
+
+    <!--servlet>
+        <servlet-name>getJsTree</servlet-name>  
+        <servlet-class>com.wno.getJsTree</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getJsTree</servlet-name>
+        <url-pattern>/getJsTree</url-pattern>
+    </servlet-mapping-->
+
+    <!--servlet>
+        <servlet-name>getJsTree2</servlet-name>  
+        <servlet-class>com.wno.getJsTree2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getJsTree2</servlet-name>
+        <url-pattern>/getJsTree2</url-pattern>
+    </servlet-mapping-->
+
+    <servlet>
+        <servlet-name>getJsTree5</servlet-name>  
+        <servlet-class>com.wno.getJsTree5</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getJsTree5</servlet-name>
+        <url-pattern>/getJsTree5</url-pattern>
+    </servlet-mapping>
+
+    <!--servlet>
+        <servlet-name>getPath</servlet-name>  
+        <servlet-class>com.wno.getPath</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getPath</servlet-name>
+        <url-pattern>/getPath</url-pattern>
+    </servlet-mapping-->
+
+    <servlet>
+        <servlet-name>getUserFromJoomla</servlet-name>  
+        <servlet-class>com.wno.getUserFromJoomla</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getUserFromJoomla</servlet-name>
+        <url-pattern>/getUserFromJoomla</url-pattern>
+    </servlet-mapping> 
+
+    <servlet>
+        <servlet-name>getOsmBoundariesAt</servlet-name>  
+        <servlet-class>com.wno.getOsmBoundariesAt</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>getOsmBoundariesAt</servlet-name>
+        <url-pattern>/getOsmBoundariesAt</url-pattern>
+    </servlet-mapping> 
+
+    <servlet>
+        <servlet-name>getBoundaries7</servlet-name>  
+        <servlet-class>com.wno.getBoundaries7</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getBoundaries7</servlet-name>
+        <url-pattern>/getBoundaries7</url-pattern>
+    </servlet-mapping> 
+
+    <servlet>
+        <servlet-name>getOsmPlaces3</servlet-name>  
+        <servlet-class>com.wno.getOsmPlaces3</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getOsmPlaces3</servlet-name>
+        <url-pattern>/getOsmPlaces3</url-pattern>
+    </servlet-mapping> 
+
+    <servlet>
+        <servlet-name>getTimestamp</servlet-name>
+        <servlet-class>com.wno.getTimestamp</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getTimestamp</servlet-name>
+        <url-pattern>/getTimestamp</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>getAction5</servlet-name>
+        <servlet-class>com.wno.getAction5</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getAction5</servlet-name>
+        <url-pattern>/getAction5</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getSID</servlet-name>
+        <servlet-class>com.wno.getSID</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getSID</servlet-name>
+        <url-pattern>/getSID</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getOsmReplicationLag3</servlet-name>
+        <servlet-class>com.wno.getOsmReplicationLag3</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getOsmReplicationLag3</servlet-name>
+        <url-pattern>/getOsmReplicationLag3</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>getBigBbox4</servlet-name>		<!-- 3.8 ff -->
+        <servlet-class>com.wno.getBigBbox4</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getBigBbox4</servlet-name>
+        <url-pattern>/getBigBbox4</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>exportBoundaries20</servlet-name>
+        <servlet-class>com.wno.exportBoundaries20</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>exportBoundaries20</servlet-name>
+        <url-pattern>/exportBoundaries20</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>exportBoundaries</servlet-name>
+        <servlet-class>com.wno.exportBoundaries19</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>exportBoundaries</servlet-name>
+        <url-pattern>/exportBoundaries/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>getChildsWithLowestAL</servlet-name>
+        <servlet-class>com.wno.getChildsWithLowestAL</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getChildsWithLowestAL</servlet-name>
+        <url-pattern>/getChildsWithLowestAL</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>searchTree5</servlet-name>
+        <servlet-class>com.wno.searchTree5</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>searchTree5</servlet-name>
+        <url-pattern>/searchTree5</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>searchTree6</servlet-name>
+        <servlet-class>com.wno.searchTree6</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>searchTree6</servlet-name>
+        <url-pattern>/searchTree6</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>OAuthLogin3a</servlet-name>
+        <servlet-class>com.wno.OAuthLogin3a</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OAuthLogin3a</servlet-name>
+        <url-pattern>/OAuthlogin3a</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>OAuthLogin3b</servlet-name>
+        <servlet-class>com.wno.OAuthLogin3b</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OAuthLogin3b</servlet-name>
+        <url-pattern>/oauth</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>OAuthLogin3c</servlet-name>
+        <servlet-class>com.wno.OAuthLogin3c</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OAuthLogin3c</servlet-name>
+        <url-pattern>/OAuthLogin3c</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Todo</servlet-name>
+        <servlet-class>com.wno.Todo</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Todo</servlet-name>
+        <url-pattern>/Todo</url-pattern>
+    </servlet-mapping>
+
+</web-app>
